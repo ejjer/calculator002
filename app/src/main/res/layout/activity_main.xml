@@ -4,8 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".MainActivity">
 
+
+    <EditText
+        android:id="@+id/input_numbers"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/res_numbers"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_numbers"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/key_1"
@@ -19,6 +43,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.75"
+        android:backgroundTint="@color/mainBtnColor"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -33,6 +58,7 @@
         app:layout_constraintStart_toEndOf="@+id/key_1"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.75"
+        android:backgroundTint="@color/mainBtnColor"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -47,6 +73,7 @@
         app:layout_constraintStart_toEndOf="@+id/key_2"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.75"
+        android:backgroundTint="@color/mainBtnColor"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -62,6 +89,7 @@
         app:layout_constraintStart_toEndOf="@+id/key_3"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.75"
+        android:backgroundTint="@color/mainBtnColor"
         tools:ignore="MissingConstraints" />
 
 
@@ -77,6 +105,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/key_1"
         app:layout_constraintVertical_bias="0.0"
+        android:backgroundTint="@color/mainBtnColor"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -92,6 +121,7 @@
         app:layout_constraintStart_toEndOf="@+id/key_4"
         app:layout_constraintTop_toBottomOf="@+id/key_2"
         app:layout_constraintVertical_bias="0.0"
+        android:backgroundTint="@color/mainBtnColor"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -106,6 +136,7 @@
         app:layout_constraintStart_toEndOf="@+id/key_5"
         app:layout_constraintTop_toBottomOf="@+id/key_3"
         app:layout_constraintVertical_bias="0.0"
+        android:backgroundTint="@color/mainBtnColor"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -121,6 +152,7 @@
         app:layout_constraintStart_toEndOf="@+id/key_6"
         app:layout_constraintTop_toBottomOf="@+id/key_plus"
         app:layout_constraintVertical_bias="0.0"
+        android:backgroundTint="@color/mainBtnColor"
         tools:ignore="MissingConstraints" />
 
 
@@ -136,6 +168,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/key_4"
         app:layout_constraintVertical_bias="0.0"
+        android:backgroundTint="@color/mainBtnColor"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -151,6 +184,7 @@
         app:layout_constraintStart_toEndOf="@+id/key_4"
         app:layout_constraintTop_toBottomOf="@+id/key_5"
         app:layout_constraintVertical_bias="0.0"
+        android:backgroundTint="@color/mainBtnColor"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -165,6 +199,7 @@
         app:layout_constraintStart_toEndOf="@+id/key_5"
         app:layout_constraintTop_toBottomOf="@+id/key_6"
         app:layout_constraintVertical_bias="0.0"
+        android:backgroundTint="@color/mainBtnColor"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -180,6 +215,7 @@
         app:layout_constraintStart_toEndOf="@+id/key_6"
         app:layout_constraintTop_toBottomOf="@+id/key_minus"
         app:layout_constraintVertical_bias="0.0"
+        android:backgroundTint="@color/mainBtnColor"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -195,6 +231,7 @@
         app:layout_constraintStart_toEndOf="@+id/key_6"
         app:layout_constraintTop_toBottomOf="@+id/key_multiply"
         app:layout_constraintVertical_bias="0.0"
+        android:backgroundTint="@color/mainBtnColor"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -209,6 +246,7 @@
         app:layout_constraintStart_toEndOf="@+id/key_5"
         app:layout_constraintTop_toBottomOf="@+id/key_9"
         app:layout_constraintVertical_bias="0.0"
+        android:backgroundTint="@color/mainBtnColor"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -223,6 +261,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/key_7"
         app:layout_constraintVertical_bias="0.0"
+        android:backgroundTint="@color/mainBtnColor"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -238,6 +277,27 @@
         app:layout_constraintStart_toEndOf="@+id/key_4"
         app:layout_constraintTop_toBottomOf="@+id/key_8"
         app:layout_constraintVertical_bias="0.0"
+        android:backgroundTint="@color/mainBtnColor"
         tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/key_c"
+        android:layout_width="205dp"
+        android:layout_height="50dp"
+        android:text="@string/key_c"
+        android:backgroundTint="@color/BtnColor"
+
+        app:layout_constraintBottom_toTopOf="@+id/key_1"
+
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/key_back"
+        android:layout_width="205dp"
+        android:layout_height="50dp"
+        android:text="@string/key_back"
+        app:layout_constraintBottom_toTopOf="@+id/key_plus"
+        android:backgroundTint="@color/BtnColor"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
