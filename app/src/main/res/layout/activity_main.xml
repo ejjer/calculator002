@@ -5,31 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-
-    <EditText
-        android:id="@+id/input_numbers"
+    <TextView
+        android:id="@+id/input_number"
         android:layout_width="match_parent"
-        android:layout_height="200sp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="MissingConstraints" />
+        android:layout_height="200dp"
+        android:textSize="50sp"
+        android:gravity="end"
+        android:singleLine="true"
+        android:ellipsize="start"
+        android:textColor="@color/white"
+        tools:ignore="InvalidId,MissingConstraints" />
 
-    <EditText
-        android:id="@+id/res_numbers"
-        android:layout_width="match_parent"
-        android:layout_height="200sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_numbers"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="MissingConstraints" />
+
+
 
     <Button
         android:id="@+id/key_1"
@@ -37,13 +28,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="2.5dp"
         android:layout_marginEnd="2.5dp"
+        android:backgroundTint="@color/mainBtnColor"
         android:text="@string/key_1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/key_2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.75"
-        android:backgroundTint="@color/mainBtnColor"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -52,13 +43,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="2.5dp"
         android:layout_marginEnd="2.5dp"
+        android:backgroundTint="@color/mainBtnColor"
         android:text="@string/key_2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/key_3"
         app:layout_constraintStart_toEndOf="@+id/key_1"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.75"
-        android:backgroundTint="@color/mainBtnColor"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -67,13 +58,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="2.5dp"
         android:layout_marginEnd="2.5dp"
+        android:backgroundTint="@color/mainBtnColor"
         android:text="@string/key_3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/key_plus"
         app:layout_constraintStart_toEndOf="@+id/key_2"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.75"
-        android:backgroundTint="@color/mainBtnColor"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -82,6 +73,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="2.5dp"
         android:layout_marginEnd="2.5dp"
+        android:backgroundTint="@color/mainBtnColor"
         android:text="@string/key_plus"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -89,7 +81,6 @@
         app:layout_constraintStart_toEndOf="@+id/key_3"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.75"
-        android:backgroundTint="@color/mainBtnColor"
         tools:ignore="MissingConstraints" />
 
 
@@ -99,13 +90,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="2.5dp"
         android:layout_marginEnd="2.5dp"
+        android:backgroundTint="@color/mainBtnColor"
         android:text="@string/key_4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/key_5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/key_1"
         app:layout_constraintVertical_bias="0.0"
-        android:backgroundTint="@color/mainBtnColor"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -114,14 +105,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="2.5dp"
         android:layout_marginEnd="2.5dp"
+        android:backgroundTint="@color/mainBtnColor"
         android:text="@string/key_5"
-        app:layout_constraintBottom_toBottomOf="parent"
 
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/key_6"
         app:layout_constraintStart_toEndOf="@+id/key_4"
         app:layout_constraintTop_toBottomOf="@+id/key_2"
         app:layout_constraintVertical_bias="0.0"
-        android:backgroundTint="@color/mainBtnColor"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -130,13 +121,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="2.5dp"
         android:layout_marginEnd="2.5dp"
+        android:backgroundTint="@color/mainBtnColor"
         android:text="@string/key_6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/key_minus"
         app:layout_constraintStart_toEndOf="@+id/key_5"
         app:layout_constraintTop_toBottomOf="@+id/key_3"
         app:layout_constraintVertical_bias="0.0"
-        android:backgroundTint="@color/mainBtnColor"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -145,6 +136,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="2.5dp"
         android:layout_marginEnd="2.5dp"
+        android:backgroundTint="@color/mainBtnColor"
         android:text="@string/key_minus"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -152,7 +144,6 @@
         app:layout_constraintStart_toEndOf="@+id/key_6"
         app:layout_constraintTop_toBottomOf="@+id/key_plus"
         app:layout_constraintVertical_bias="0.0"
-        android:backgroundTint="@color/mainBtnColor"
         tools:ignore="MissingConstraints" />
 
 
@@ -162,13 +153,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="2.5dp"
         android:layout_marginEnd="2.5dp"
+        android:backgroundTint="@color/mainBtnColor"
         android:text="@string/key_7"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/key_8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/key_4"
         app:layout_constraintVertical_bias="0.0"
-        android:backgroundTint="@color/mainBtnColor"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -177,14 +168,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="2.5dp"
         android:layout_marginEnd="2.5dp"
+        android:backgroundTint="@color/mainBtnColor"
         android:text="@string/key_8"
-        app:layout_constraintBottom_toBottomOf="parent"
 
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/key_9"
         app:layout_constraintStart_toEndOf="@+id/key_4"
         app:layout_constraintTop_toBottomOf="@+id/key_5"
         app:layout_constraintVertical_bias="0.0"
-        android:backgroundTint="@color/mainBtnColor"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -193,13 +184,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="2.5dp"
         android:layout_marginEnd="2.5dp"
+        android:backgroundTint="@color/mainBtnColor"
         android:text="@string/key_9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/key_multiply"
         app:layout_constraintStart_toEndOf="@+id/key_5"
         app:layout_constraintTop_toBottomOf="@+id/key_6"
         app:layout_constraintVertical_bias="0.0"
-        android:backgroundTint="@color/mainBtnColor"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -208,6 +199,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="2.5dp"
         android:layout_marginEnd="2.5dp"
+        android:backgroundTint="@color/mainBtnColor"
         android:text="@string/key_multiply"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -215,7 +207,6 @@
         app:layout_constraintStart_toEndOf="@+id/key_6"
         app:layout_constraintTop_toBottomOf="@+id/key_minus"
         app:layout_constraintVertical_bias="0.0"
-        android:backgroundTint="@color/mainBtnColor"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -224,6 +215,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="2.5dp"
         android:layout_marginEnd="2.5dp"
+        android:backgroundTint="@color/mainBtnColor"
         android:text="@string/key_share"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -231,7 +223,6 @@
         app:layout_constraintStart_toEndOf="@+id/key_6"
         app:layout_constraintTop_toBottomOf="@+id/key_multiply"
         app:layout_constraintVertical_bias="0.0"
-        android:backgroundTint="@color/mainBtnColor"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -240,13 +231,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="2.5dp"
         android:layout_marginEnd="2.5dp"
+        android:backgroundTint="@color/mainBtnColor"
         android:text="@string/key_equally"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/key_shere"
         app:layout_constraintStart_toEndOf="@+id/key_5"
         app:layout_constraintTop_toBottomOf="@+id/key_9"
         app:layout_constraintVertical_bias="0.0"
-        android:backgroundTint="@color/mainBtnColor"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -255,13 +246,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="2.5dp"
         android:layout_marginEnd="2.5dp"
+        android:backgroundTint="@color/mainBtnColor"
         android:text="@string/key_0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/key_dot"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/key_7"
         app:layout_constraintVertical_bias="0.0"
-        android:backgroundTint="@color/mainBtnColor"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -270,34 +261,38 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="2.5dp"
         android:layout_marginEnd="2.5dp"
+        android:backgroundTint="@color/mainBtnColor"
         android:text="@string/key_dot"
         app:layout_constraintBottom_toBottomOf="parent"
-
         app:layout_constraintEnd_toStartOf="@+id/key_equally"
         app:layout_constraintStart_toEndOf="@+id/key_4"
         app:layout_constraintTop_toBottomOf="@+id/key_8"
         app:layout_constraintVertical_bias="0.0"
-        android:backgroundTint="@color/mainBtnColor"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/key_c"
-        android:layout_width="205dp"
-        android:layout_height="50dp"
-        android:text="@string/key_c"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="5dp"
         android:backgroundTint="@color/BtnColor"
-
+        android:text="@string/key_c"
         app:layout_constraintBottom_toTopOf="@+id/key_1"
-
+        app:layout_constraintEnd_toStartOf="@+id/key_back"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/key_back"
-        android:layout_width="205dp"
-        android:layout_height="50dp"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="@color/BtnColor"
         android:text="@string/key_back"
         app:layout_constraintBottom_toTopOf="@+id/key_plus"
-        android:backgroundTint="@color/BtnColor"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/key_c" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
