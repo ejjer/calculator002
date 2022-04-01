@@ -10,7 +10,7 @@ import net.objecthunter.exp4j.ExpressionBuilder
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main   )
 
 
         val textView: TextView = findViewById(R.id.input_number)
@@ -81,7 +81,11 @@ class MainActivity : AppCompatActivity() {
 
             val ex = ExpressionBuilder(textView.text.toString()).build()
             val res = ex.evaluate()
+
+
+
             textView.text = res.toString()
+
 
 
         }
@@ -99,6 +103,8 @@ class MainActivity : AppCompatActivity() {
                 textView.text = back_str.substring(0, back_str.length - 1)
         }
     }
+
+
 
 
 }
